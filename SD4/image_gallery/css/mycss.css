@@ -1,0 +1,67 @@
+header {
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+}
+.slideShow-caption{
+	font-size: 5em;
+	font-variant: small-caps;
+	font-family: serif,Arial, Helvetica, sans-serif;
+}
+.signup-form{
+	margin: 0 auto;
+	float: none;
+}
+.loginbutton{
+	background-color: transparent;
+	color: white; 
+	border-radius: 10px;
+}
+textarea {
+   resize: none;
+}
+.pagination {
+    display: inline-block;
+}
+
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid black;
+    margin: 0 4px;
+}
+
+.pagination a.active {
+    background-color: white;
+    color: black;
+}
+
+.pagination a:hover:not(.active) {
+	background-color: #ddd;
+}
+
+.sidenav {
+    height: 100%;
+    position: relative;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: solid;
+    border-radius: 5px;
+}
+
+.sidenav a {
+    padding: 6px 6px 6px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}

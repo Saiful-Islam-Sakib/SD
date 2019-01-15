@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/settings_2">
+
+    <Toolbar
+        android:id="@+id/events_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Events"
+            android:textColor="@color/light_1"
+            android:fontFamily="@font/action_man_shaded"
+            android:textSize="50sp"
+            android:gravity="center"/>
+
+    </Toolbar>
+
+    <ScrollView
+        android:id="@+id/events_scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        android:verticalScrollbarPosition="right">
+
+        <LinearLayout
+            android:id="@+id/events_scrollView_linearlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--<TextView
+                android:id="@+id/events_event_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_text_view"
+                android:textSize="20sp"
+                android:layout_margin="10dp"
+                android:textColor="@color/light_1"/>
+                -->
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_margin="5dp">
+
+        <EditText
+            android:id="@+id/events_et"
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:layout_height="match_parent"
+            android:background="@drawable/custom_text_field"
+            android:textColor="@color/light_1"
+            android:inputType="textMultiLine"/>
+
+        <ImageButton
+            android:id="@+id/events_send_btn"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:background="@drawable/send_icon"
+            android:onClick="send_events_button" />
+
+    </LinearLayout>
+
+</LinearLayout>

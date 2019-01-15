@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background_1">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="Sign Up"
+        android:textColor="@color/light_1"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:fontFamily="@font/action_man_shaded"
+        android:textSize="50sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="who are you ?"
+        android:textColor="@color/light_1"
+        android:textAlignment="center"
+        android:fontFamily="@font/action_man_italic"
+        android:textSize="20sp"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+        <RadioButton
+            android:id="@+id/signup_radiobutton_cr"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="CR"
+            android:layout_marginHorizontal="20dp"
+            android:textSize="20sp"
+            android:textColor="@color/light_1"
+            android:fontFamily="@font/action_man"
+            android:onClick="signup_radiobutton"
+            android:buttonTint="@color/light_1" />
+
+        <RadioButton
+            android:id="@+id/signup_radiobutton_other"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Other"
+            android:layout_marginHorizontal="20dp"
+            android:textSize="20sp"
+            android:textColor="@color/light_1"
+            android:fontFamily="@font/action_man"
+            android:onClick="signup_radiobutton"
+            android:buttonTint="@color/light_1" />
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/signup_username_et"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:hint="User Name"
+        android:textColor="@color/light_1"
+        android:textColorHint="@color/Gray"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginBottom="5dp"
+        android:maxLines="1"
+        android:maxLength="20"
+        android:ellipsize="end"
+        android:background="@drawable/custom_text_field" />
+
+    <EditText
+        android:id="@+id/signup_email_et"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:hint="Email"
+        android:textColorHint="@color/Gray"
+        android:textColor="@color/light_1"
+        android:inputType="textEmailAddress"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginBottom="5dp"
+        android:maxLines="1"
+        android:maxLength="50"
+        android:ellipsize="end"
+        android:background="@drawable/custom_text_field"/>
+
+    <EditText
+        android:id="@+id/signup_passwor_et"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:hint="Password"
+        android:textColorHint="@color/Gray"
+        android:textColor="@color/light_1"
+        android:inputType="textPassword"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginBottom="5dp"
+        android:maxLines="1"
+        android:maxLength="20"
+        android:ellipsize="end"
+        android:background="@drawable/custom_text_field"/>
+
+    <EditText
+        android:id="@+id/signup_confirmpasswor_et"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:hint="Confirm password"
+        android:textColor="@color/light_1"
+        android:inputType="textPassword"
+        android:textColorHint="@color/Gray"
+        android:layout_marginHorizontal="50dp"
+        android:maxLines="1"
+        android:maxLength="20"
+        android:ellipsize="end"
+        android:background="@drawable/custom_text_field"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_margin="5dp">
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:text="Sign Up"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/custom_button"
+            android:onClick="signup_button"/>
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:text="Log in"
+            android:background="@drawable/custom_button"
+            android:onClick="login_button"/>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:textColor="@color/light_1"
+        android:gravity="center"
+        android:text="*** Already Have and Account , Press LOG IN ***"/>
+
+</LinearLayout>

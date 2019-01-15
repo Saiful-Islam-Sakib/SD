@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Daily Needs</string>
+    <string name="cr_info">Cr Information</string>
+    <string name="forgotpass"> <u>forget password</u> </string>
+</resources>

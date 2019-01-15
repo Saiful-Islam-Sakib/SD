@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/settings_2">
+
+    <Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="5"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/action_man_shaded"
+                android:text="Home"
+                android:textAlignment="center"
+                android:textColor="@color/WhiteSmoke"
+                android:textSize="50sp" />
+
+            <Button
+                android:id="@+id/home_logout_btn"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:background="@drawable/logout"
+                android:onClick="logout"/>
+
+        </LinearLayout>
+
+    </Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        android:orientation="horizontal">
+
+        <!--images vertically-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/contacts"
+                android:layout_margin="50dp"
+                android:onClick="contacts_button"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:text="contacts"
+                android:fontFamily="@font/action_man_bold"
+                android:textColor="@color/WhiteSmoke"
+                android:textAlignment="center"
+                android:layout_marginTop="-40dp"/>
+
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/routine"
+                android:layout_margin="50dp"
+                android:onClick="routine_button"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:text="Routine"
+                android:fontFamily="@font/action_man_bold"
+                android:textColor="@color/WhiteSmoke"
+                android:textAlignment="center"
+                android:layout_marginTop="-40dp"/>
+
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/events"
+                android:layout_margin="50dp"
+                android:onClick="events_button"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:text="Events"
+                android:fontFamily="@font/action_man_bold"
+                android:textColor="@color/WhiteSmoke"
+                android:textAlignment="center"
+                android:layout_marginTop="-40dp"/>
+
+        </LinearLayout>
+
+        <!--images vertically-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/calculator"
+                android:layout_margin="50dp"
+                android:onClick="cgpa_calculator_button"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:text="GPA Calculator"
+                android:fontFamily="@font/action_man_bold"
+                android:textColor="@color/WhiteSmoke"
+                android:textAlignment="center"
+                android:layout_marginTop="-40dp"/>
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/settings"
+                android:layout_margin="50dp"
+                android:onClick="settings_button"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:text="Settings"
+                android:fontFamily="@font/action_man_bold"
+                android:textColor="@color/WhiteSmoke"
+                android:textAlignment="center"
+                android:layout_marginTop="-40dp"/>
+
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/help"
+                android:layout_margin="50dp"
+                android:onClick="info_button"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:text="info"
+                android:fontFamily="@font/action_man_bold"
+                android:textColor="@color/WhiteSmoke"
+                android:textAlignment="center"
+                android:layout_marginTop="-40dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="EducationalDBModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2012" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="EducationalDBModelStoreContainer">
+    <EntitySet Name="Answers" EntityType="EducationalDBModel.Store.Answers" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Comments" EntityType="EducationalDBModel.Store.Comments" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Moderators" EntityType="EducationalDBModel.Store.Moderators" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Posts" EntityType="EducationalDBModel.Store.Posts" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Questions" EntityType="EducationalDBModel.Store.Questions" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Users" EntityType="EducationalDBModel.Store.Users" store:Type="Tables" Schema="dbo" />
+  </EntityContainer>
+  <EntityType Name="Answers">
+    <Key>
+      <PropertyRef Name="answerId" />
+    </Key>
+    <Property Name="answerId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="userId" Type="int" Nullable="false" />
+    <Property Name="questionId" Type="int" Nullable="false" />
+    <Property Name="status" Type="bit" Nullable="true" />
+  </EntityType>
+  <EntityType Name="Comments">
+    <Key>
+      <PropertyRef Name="commentId" />
+    </Key>
+    <Property Name="commentId" Type="int" Nullable="false" />
+    <Property Name="postId" Type="int" Nullable="false" />
+    <Property Name="userId" Type="int" Nullable="false" />
+    <Property Name="creationDate" Type="datetime" Nullable="true" />
+  </EntityType>
+  <EntityType Name="Moderators">
+    <Key>
+      <PropertyRef Name="moderatorId" />
+    </Key>
+    <Property Name="moderatorId" Type="int" Nullable="false" />
+    <Property Name="name" Type="varchar" Nullable="false" MaxLength="255" />
+    <Property Name="email" Type="varchar" Nullable="false" MaxLength="255" />
+    <Property Name="password" Type="varchar" Nullable="false" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="Posts">
+    <Key>
+      <PropertyRef Name="postId" />
+    </Key>
+    <Property Name="postId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="body" Type="varchar" Nullable="false" MaxLength="3000" />
+    <Property Name="tag" Type="varchar" Nullable="true" MaxLength="255" />
+    <Property Name="title" Type="varchar" Nullable="false" MaxLength="255" />
+    <Property Name="creationDate" Type="datetime" Nullable="true" />
+    <Property Name="status" Type="bit" Nullable="true" />
+  </EntityType>
+  <EntityType Name="Questions">
+    <Key>
+      <PropertyRef Name="questionId" />
+    </Key>
+    <Property Name="questionId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="userId" Type="int" Nullable="false" />
+    <Property Name="Body" Type="varchar" Nullable="false" MaxLength="500" />
+    <Property Name="Title" Type="varchar" Nullable="true" MaxLength="255" />
+    <Property Name="Tag" Type="varchar" Nullable="true" MaxLength="255" />
+    <Property Name="Answer" Type="varchar" Nullable="false" MaxLength="255" />
+    <Property Name="Options" Type="varchar" Nullable="true" MaxLength="255" />
+    <Property Name="status" Type="bit" Nullable="true" />
+  </EntityType>
+  <EntityType Name="Users">
+    <Key>
+      <PropertyRef Name="userId" />
+    </Key>
+    <Property Name="userId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="userName" Type="varchar" Nullable="false" MaxLength="255" />
+    <Property Name="Email" Type="varchar" Nullable="false" MaxLength="255" />
+    <Property Name="institute" Type="varchar" Nullable="true" MaxLength="255" />
+    <Property Name="password" Type="varchar" Nullable="false" MaxLength="255" />
+  </EntityType>
+</Schema>

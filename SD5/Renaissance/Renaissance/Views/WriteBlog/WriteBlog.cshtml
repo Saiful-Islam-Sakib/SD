@@ -1,0 +1,55 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Compose</title>
+    @Styles.Render("~/Content/css/master.css")
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div>
+        <nav class="navbar navbar-inverse">
+            <div class="container">
+                <!--logo-->
+                <div class="navbar-header">
+                    <a href="/Home/Index"><img src="~/Content/img/logo.png" class="navbar-brand" alt="Educational Blog"></a>
+                </div>
+                <!--options-->
+                <div>
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="/Home/Index">Home</a></li>
+                        <li><a href="#aboutsite">About</a></li>
+                        <li><a href="#devcontact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!--droup down menue-->
+                <div class="navbar navbar-nav navbar-right">
+                    <ul class="nav navbar-nav">
+                        <li><a href="/ProfilePage/Profile">User Name</a></li>
+                        <li><a href="#">Sign Out</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    
+    <div class="container">
+        
+    </div>
+
+    <div class="jumbotron jumbotron-fluid mt-5">
+        <div class="container">
+            <h1 class="display-4">Help Share Discuss Grow </h1>
+            <p class="lead">Learn about anything .</p>
+            <p> Copyright &copy; 2019 Renaissance Education </p>
+        </div>
+    </div>
+</body>
+</html>
